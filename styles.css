@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.center-message {
+  text-align: center;
+}
+
+.center-message h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
