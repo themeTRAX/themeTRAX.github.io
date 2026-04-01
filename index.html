@@ -3,12 +3,462 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>themeTRAX</title>
+    <title>ThemeTRAX</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="center-message">
-      <h1>Coming soon</h1>
+    <main class="page">
+      <header class="hero">
+        <img class="hero__watermark" src="images/oltsLogo.png" alt="" aria-hidden="true" />
+        <div class="hero__content fade-up">
+          <h1 class="logo-text logo-text-white logo-text-xl">
+            <span class="logo-theme">THEME</span>TRAX<span class="logo-theme">:</span><span class="word-rotator" aria-hidden="true">
+              <span class="word-rotator__inner">
+                <span>RIDE</span>
+                <span>RACK</span>
+                <span>RIDE</span>
+              </span>
+            </span>
+            <span class="sr-only">RIDE and RACK</span>
+          </h1>
+        </div>
+      </header>
+
+      <section class="product">
+        <div class="product__media fade-up">
+          <img src="images/Ride.png" alt="THEMETRAX:RIDE playback engine on a dark surface." />
+        </div>
+        <div class="product__content fade-up delay-1">
+          <h2 class="logo-text section-title">
+            <span class="logo-theme">THEME</span>TRAX<span class="logo-theme">:RIDE</span>
+          </h2>
+          <p class="product-text">
+            Compact networked playback engine designed for onboard vehicle audio and lighting in attractions,
+            transport experiences, and mobile installations.
+          </p>
+          <p class="product-text">
+            Built for mission-critical applications requiring dependable, precisely triggered sound and lighting
+            effects. Integrates seamlessly with show control systems, location tracking, and network infrastructure.
+          </p>
+          <a class="button" href="THEMETRAXRIDE_-_Specifications_V0.4.pdf" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3v10" />
+              <path d="M8 9l4 4 4-4" />
+              <path d="M5 17h14v4H5z" />
+            </svg>
+            Download Spec Sheet
+          </a>
+        </div>
+      </section>
+
+      <section class="product product--reverse">
+        <div class="product__content fade-up delay-1">
+          <h2 class="logo-text section-title">
+            <span class="logo-theme">THEME</span>TRAX<span class="logo-theme">:RACK</span>
+          </h2>
+          <p class="product-text">
+            Centralized control and synchronization system for managing fleets of THEMETRAX:RIDE units.
+          </p>
+          <p class="product-text">
+            Enables coordinated playback across entire attractions and multi-zone installations. Real-time monitoring,
+            content distribution, and fleet-wide synchronization from a single interface.
+          </p>
+          <a class="button" href="THEMETRAXRACK_-_Specifications_V0.4.pdf" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3v10" />
+              <path d="M8 9l4 4 4-4" />
+              <path d="M5 17h14v4H5z" />
+            </svg>
+            Download Spec Sheet
+          </a>
+        </div>
+        <div class="product__media fade-up">
+          <img src="images/Rack.png" alt="THEMETRAX:RACK control system on a dark surface." />
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="section-inner">
+          <div class="features__grid">
+            <article class="feature-card fade-up">
+              <h3>Precise Triggering</h3>
+              <p>Frame-accurate playback synchronized with control signals and show logic</p>
+            </article>
+            <article class="feature-card fade-up delay-1">
+              <h3>Audio over IP</h3>
+              <p>AES67, balanced analog, and digital connectivity for pristine sound</p>
+            </article>
+            <article class="feature-card fade-up delay-2">
+              <h3>Pixel Mapping</h3>
+              <p>Bring advanced lighting effects to onboard vehicle systems with seamless ArtNet integration</p>
+            </article>
+            <article class="feature-card fade-up delay-3">
+              <h3>Scalable Systems</h3>
+              <p>From standalone units to fleet-wide synchronized installations</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="applications">
+        <div class="section-inner">
+          <h2 class="logo-text section-title section-title-center">Application Examples</h2>
+          <p class="section-subtitle">
+            THEMETRAX systems deliver precise audio and lighting control across a diverse range of attraction types
+          </p>
+          <div class="carousel" data-carousel>
+            <div class="carousel__viewport">
+              <div class="carousel__track" data-carousel-track>
+                <article class="app-card carousel__item">
+                  <div class="app-card__image">
+                    <img src="images/Coaster1.png" alt="Roller coaster system." />
+                  </div>
+                  <div class="app-card__body">
+                    <h3>Roller Coasters</h3>
+                    <p>Synchronized audio and lighting on and off-board</p>
+                  </div>
+                </article>
+                <article class="app-card carousel__item">
+                  <div class="app-card__image">
+                    <img src="images/Darkride.png" alt="Dark ride attraction." />
+                  </div>
+                  <div class="app-card__body">
+                    <h3>Dark Rides</h3>
+                    <p>Immersive, responsive, fleet-syncronised experiences</p>
+                  </div>
+                </article>
+                <article class="app-card carousel__item">
+                  <div class="app-card__image">
+                    <img src="images/LandTrain1.png" alt="Land train transport." />
+                  </div>
+                  <div class="app-card__body">
+                    <h3>Land Trains</h3>
+                    <p>Live announcements and GPS triggered audio and lighting playback</p>
+                  </div>
+                </article>
+                <article class="app-card carousel__item">
+                  <div class="app-card__image">
+                    <img src="images/Monorail1.png" alt="Peoplemover vehicle." />
+                  </div>
+                  <div class="app-card__body">
+                    <h3>Peoplemovers</h3>
+                    <p>Automated transport system integration with UL, FCC, CCC certification</p>
+                  </div>
+                </article>
+                <article class="app-card carousel__item">
+                  <div class="app-card__image">
+                    <img src="images/TourBoat.png" alt="Boat tour attraction." />
+                  </div>
+                  <div class="app-card__body">
+                    <h3>Boat Tours</h3>
+                    <p>GPS triggerd playback audio solutions with live audio input</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous slide">
+                <span aria-hidden="true">&lt;</span>
+              </button>
+              <button class="carousel__btn" type="button" data-carousel-next aria-label="Next slide">
+                <span aria-hidden="true">&gt;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="downloads">
+        <div class="section-inner">
+          <h2 class="logo-text section-title section-title-center">Technical Documentation</h2>
+          <p class="section-subtitle">Download detailed specifications and application examples</p>
+
+          <div class="download-grid">
+            <article class="download-card">
+              <h3 class="logo-text">
+                <span class="logo-theme">THEME</span>TRAX<span class="logo-theme">:RIDE</span>
+              </h3>
+              <p>Complete technical specifications, connectivity options, and integration details</p>
+              <a class="button button-center" href="THEMETRAXRIDE_-_Specifications_V0.4.pdf" download>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Download RIDE Spec Sheet
+              </a>
+            </article>
+            <article class="download-card">
+              <h3 class="logo-text">
+                <span class="logo-theme">THEME</span>TRAX<span class="logo-theme">:RACK</span>
+              </h3>
+              <p>Fleet management capabilities, synchronization protocols, and system architecture</p>
+              <a class="button button-center" href="THEMETRAXRACK_-_Specifications_V0.4.pdf" download>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Download RACK Spec Sheet
+              </a>
+            </article>
+          </div>
+
+          <div class="case-studies">
+            <h3>Application Examples &amp; Case Studies</h3>
+            <p>Explore real-world implementations and current recommended practices</p>
+            <div class="case-grid">
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Roller Coaster
+              </a>
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Dark Ride
+              </a>
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                River Tour & Land Train
+              </a>
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Off-board trigger on-board
+              </a>
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                On-board trgger off-board
+              </a>
+              <a class="case-link" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3v10" />
+                  <path d="M8 9l4 4 4-4" />
+                  <path d="M5 17h14v4H5z" />
+                </svg>
+                Fleet Management
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <img class="cta__watermark" src="images/oltsLogo.png" alt="" aria-hidden="true" />
+        <div class="cta__content fade-up">
+          <h2 class="logo-text logo-text-white section-title-center">
+            Bring Professional Audio and Lighting to Your Attraction
+          </h2>
+          <p>
+            Discover how THEMETRAX delivers precise, dependable audio and pixel mapping for onboard vehicle systems
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="section-inner">
+          <h2 class="logo-text section-title section-title-center">Get in Touch</h2>
+          <p class="section-subtitle">
+            Have questions about THEMETRAX systems? Our team is here to help with technical specifications,
+            integration planning, and project consultation.
+          </p>
+
+          <div class="contact-card fade-up">
+            <div class="contact-icon" aria-hidden="true">
+              <svg class="icon icon--large" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M4 6h16v12H4z" />
+                <path d="m4 6 8 6 8-6" />
+              </svg>
+            </div>
+            <h3>Contact Us</h3>
+            <p>
+              Get in touch to discuss your project requirements, system architecture, and integration options.
+            </p>
+            <a class="button button-center" href="mailto:info@themetrax.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M4 6h16v12H4z" />
+                <path d="m4 6 8 6 8-6" />
+              </svg>
+              info@themetrax.com
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="section-inner">
+        <p>Copyright 2026 Oak Leaf Technical Services Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const carousels = document.querySelectorAll("[data-carousel]");
+        carousels.forEach((carousel) => {
+          const track = carousel.querySelector("[data-carousel-track]");
+          const prev = carousel.querySelector("[data-carousel-prev]");
+          const next = carousel.querySelector("[data-carousel-next]");
+          if (!track || !prev || !next) {
+            return;
+          }
+
+          let index = 0;
+          let realCount = 0;
+          let timerId = null;
+          const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+          const getVisible = () => {
+            const value = getComputedStyle(carousel).getPropertyValue("--visible");
+            return Number.parseInt(value, 10) || 1;
+          };
+
+          const getGap = () => {
+            const value = getComputedStyle(track).gap;
+            return Number.parseFloat(value) || 0;
+          };
+
+          const update = (immediate = false) => {
+            const items = Array.from(track.children);
+            if (!items.length) {
+              return;
+            }
+            const visible = Math.min(getVisible(), realCount || getVisible());
+            const itemWidth = items[0].getBoundingClientRect().width;
+            const offset = index * (itemWidth + getGap());
+            track.style.transition = immediate || prefersReducedMotion ? "none" : "transform 0.4s ease";
+            track.style.transform = `translateX(${-offset}px)`;
+            const canScroll = realCount > visible;
+            prev.disabled = !canScroll;
+            next.disabled = !canScroll;
+            if (immediate || prefersReducedMotion) {
+              window.requestAnimationFrame(snapIfNeeded);
+            }
+          };
+
+          prev.addEventListener("click", () => {
+            index -= 1;
+            update();
+            stopAuto();
+            startAuto();
+          });
+
+          next.addEventListener("click", () => {
+            index += 1;
+            update();
+            stopAuto();
+            startAuto();
+          });
+
+          const setup = () => {
+            const clones = track.querySelectorAll("[data-clone]");
+            clones.forEach((clone) => clone.remove());
+
+            const items = Array.from(track.children);
+            if (!items.length) {
+              return;
+            }
+            const visible = Math.min(getVisible(), items.length);
+
+            const cloneItem = (item) => {
+              const clone = item.cloneNode(true);
+              clone.dataset.clone = "true";
+              clone.setAttribute("aria-hidden", "true");
+              return clone;
+            };
+
+            items.slice(-visible).forEach((item) => {
+              track.insertBefore(cloneItem(item), track.firstChild);
+            });
+            items.slice(0, visible).forEach((item) => {
+              track.appendChild(cloneItem(item));
+            });
+
+            realCount = items.length;
+            index = visible;
+            update(true);
+          };
+
+          const snapIfNeeded = () => {
+            if (!realCount) {
+              return;
+            }
+            const visible = Math.min(getVisible(), realCount);
+            if (index >= realCount + visible) {
+              index -= realCount;
+              update(true);
+            } else if (index < visible) {
+              index += realCount;
+              update(true);
+            }
+          };
+
+          const startAuto = () => {
+            if (prefersReducedMotion || timerId) {
+              return;
+            }
+            const visible = Math.min(getVisible(), realCount || getVisible());
+            if (realCount <= visible) {
+              return;
+            }
+            timerId = window.setInterval(() => {
+              index += 1;
+              update();
+            }, 3500);
+          };
+
+          const stopAuto = () => {
+            if (!timerId) {
+              return;
+            }
+            window.clearInterval(timerId);
+            timerId = null;
+          };
+
+          carousel.addEventListener("mouseenter", stopAuto);
+          carousel.addEventListener("mouseleave", startAuto);
+          carousel.addEventListener("focusin", stopAuto);
+          carousel.addEventListener("focusout", startAuto);
+
+          track.addEventListener("transitionend", (event) => {
+            if (event.propertyName !== "transform") {
+              return;
+            }
+            snapIfNeeded();
+          });
+
+          window.addEventListener("resize", () => {
+            window.requestAnimationFrame(() => {
+              stopAuto();
+              setup();
+              startAuto();
+            });
+          });
+
+          window.requestAnimationFrame(() => {
+            setup();
+            startAuto();
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
