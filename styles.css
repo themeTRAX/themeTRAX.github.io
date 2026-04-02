@@ -103,6 +103,11 @@ a {
   font-weight: 300;
 }
 
+.logo-colon {
+  display: inline-block;
+  transform: translateY(-0.11em);
+}
+
 .section-title {
   font-size: clamp(0.5rem, 4vw, 2rem);
   margin-bottom: 0.8rem;
@@ -193,6 +198,12 @@ a {
   z-index: 1;
 }
 
+.hero__content p {
+  margin-top: 0.8rem;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
 .hero .logo-text {
   line-height: 1;
 }
@@ -203,14 +214,13 @@ a {
   position: relative;
   overflow: hidden;
   height: 1em;
-  width: 4.6em;
   vertical-align: baseline;
-  text-align: left;
 }
 
 .word-rotator__inner {
   display: block;
   animation: wordSwap 4s ease-in-out infinite;
+  text-align: left;
 }
 
 .word-rotator__inner span {
