@@ -179,6 +179,7 @@ a {
   background-position: center;
   background-attachment: scroll;
   padding: clamp(0.5rem, 1.5vw, 4rem) 1.5rem;
+  padding-top: calc(clamp(0.5rem, 1vw, 4rem) + 0.5rem);
   text-align: center;
 }
 
@@ -499,6 +500,7 @@ a {
   transform: translate(-50%, -50%);
   height: clamp(360px, 85vh, 860px);
   width: auto;
+  max-width: none;
   opacity: 0.15;
   pointer-events: none;
 }
