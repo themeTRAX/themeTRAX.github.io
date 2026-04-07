@@ -614,7 +614,7 @@ body.explore-page {
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  padding: clamp(1.5rem, 3vw, 3rem) 0 clamp(1.6rem, 4vw, 4rem);
+  padding: clamp(1rem, 1.5vw, 3rem);
   background-image: linear-gradient(135deg, rgba(7, 18, 31, 0.92), rgba(15, 45, 74, 0.86)),
     url("images/background.png");
   background-size: cover;
