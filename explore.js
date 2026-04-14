@@ -6,6 +6,68 @@
     return;
   }
 
+  const chaptersToggle = document.querySelector("[data-chapters-toggle]");
+  const chaptersPanel = document.querySelector("[data-chapters-panel]");
+  const chaptersClose = document.querySelector("[data-chapters-close]");
+  const mobileQuery = window.matchMedia("(max-width: 900px)");
+  const openClass = "chapters-open";
+
+  const syncChaptersState = () => {
+    if (!chaptersToggle || !chaptersPanel) {
+      return;
+    }
+    const isOpen = document.body.classList.contains(openClass);
+    chaptersToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    if (mobileQuery.matches) {
+      chaptersPanel.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    } else {
+      chaptersPanel.removeAttribute("aria-hidden");
+    }
+  };
+
+  const closeChapters = () => {
+    document.body.classList.remove(openClass);
+    syncChaptersState();
+  };
+
+  const openChapters = () => {
+    document.body.classList.add(openClass);
+    syncChaptersState();
+  };
+
+  if (chaptersToggle && chaptersPanel) {
+    chaptersToggle.addEventListener("click", () => {
+      if (document.body.classList.contains(openClass)) {
+        closeChapters();
+      } else {
+        openChapters();
+      }
+    });
+
+    chaptersClose?.addEventListener("click", closeChapters);
+
+    chaptersPanel.querySelectorAll("a[href^='#']").forEach((link) => {
+      link.addEventListener("click", closeChapters);
+    });
+
+    mobileQuery.addEventListener("change", (event) => {
+      if (!event.matches) {
+        closeChapters();
+      } else {
+        syncChaptersState();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && document.body.classList.contains(openClass)) {
+        event.preventDefault();
+        closeChapters();
+      }
+    });
+
+    syncChaptersState();
+  }
+
   const links = new Map();
   toc.querySelectorAll("a[href^='#']").forEach((link) => {
     const id = link.getAttribute("href").slice(1);

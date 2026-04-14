@@ -24,12 +24,16 @@
               Download Spec Sheet
             </a>
           </div>
+          <button class="chapter-toggle" type="button" data-chapters-toggle aria-expanded="false" aria-controls="chapters-panel">
+            <span class="sr-only">Toggle chapters</span>
+            <span class="chapter-toggle__icon" aria-hidden="true"></span>
+          </button>
         </div>
       </header>
 
       <section class="explore-shell">
         <div class="section-inner explore-layout">
-          <aside class="explore-toc" aria-label="Chapter navigation">
+          <aside class="explore-toc" id="chapters-panel" data-chapters-panel aria-label="Chapter navigation">
             <ul>
               <li>
                 <a href="#chapter-track-management" aria-current="true">Track Management</a>
@@ -339,6 +343,8 @@
         </div>
       </section>
     </main>
+
+    <button class="chapters-overlay" type="button" data-chapters-close aria-label="Close chapters"></button>
 
     <footer class="site-footer">
       <div class="section-inner">
